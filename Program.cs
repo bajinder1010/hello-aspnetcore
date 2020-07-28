@@ -21,7 +21,10 @@ namespace HelloAspNetCore
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
                     config.AddJsonFile(
+
                         $"appsettings.{hostingContext.HostingEnvironment.EnvironmentName ?? "Development"}.json", optional: false, reloadOnChange: true);
+
+
                     config.AddEnvironmentVariables();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
