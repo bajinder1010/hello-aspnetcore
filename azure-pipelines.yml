@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'bajinder1010helloaspnetcore.default'
+    environment: 'bajinder1010helloaspnetcore'
     strategy:
       runOnce:
         deploy:
